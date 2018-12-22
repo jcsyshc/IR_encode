@@ -158,7 +158,7 @@ def send_IR_signal():
 
 
 if __name__ == '__main__':
-    f = open('signal.txt')
+    '''f = open('signal.txt')
     code = str('')
     for line in f:
         item_pulse = line.split(' ')
@@ -173,9 +173,9 @@ if __name__ == '__main__':
                 code = str('')
                 continue
             code += decode_byte(pulse, space)
-    print_code(code)
+    print_code(code)'''
 
-    '''state = State()
+    state = State()
     state.power_on = False
     state.working_mode = 0
     state.temperature = 0
@@ -184,6 +184,6 @@ if __name__ == '__main__':
     while True:
         send_IR_signal()
         print('Sent.')
-        time.sleep(1)'''
+        time.sleep(1)
 
 # 校验码可能为r(r(模式)+r(温度)+左右扫风+换气+100)
